@@ -1,0 +1,276 @@
+:root {
+    --primary-blue: #0b1c40;
+    --secondary-blue: #003366;
+    --accent-orange: #d1411e;
+    --border-color: #d2d2d2;
+    --error-red: #d93025;
+    --bg-light: #fdfdfd;
+    --text-main: #333;
+    --btn-disabled: #a8a8a8;
+    --captcha-bg: #e6e6e6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    border-bottom: 2px solid var(--primary-blue);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    height: 50px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #666;
+}
+
+.aadhaar-logo {
+    height: 50px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.page-title {
+    font-size: 16px;
+    color: var(--secondary-blue);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Login Card */
+.login-card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.card-top-line {
+    height: 3px;
+    background: linear-gradient(to right, #001f5b, #0072c6);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Inputs */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-wrapper {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.floating-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+    font-size: 16px;
+    background: transparent;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+.floating-input:focus {
+    border-bottom: 1px solid var(--accent-orange);
+}
+
+.floating-label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.floating-input:focus ~ .floating-label,
+.floating-input:not(:placeholder-shown) ~ .floating-label {
+    top: -12px;
+    font-size: 12px;
+    color: var(--accent-orange);
+}
+
+/* Error state (hidden by default) */
+.error-text {
+    font-size: 10px;
+    color: var(--error-red);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+
+.input-group.has-error .error-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+.input-group.has-error .floating-input {
+    border-bottom-color: var(--error-red);
+}
+
+.input-group.has-error .floating-label {
+    color: var(--error-red);
+}
+
+/* Captcha specific */
+.captcha-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.captcha-input-wrapper {
+    margin-bottom: 15px;
+}
+
+.captcha-display {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.captcha-image {
+    background-color: var(--captcha-bg);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 20px;
+    flex: 1;
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #333;
+    /* Noise effect background placeholder */
+    background-image: radial-gradient(#999 1px, transparent 1px);
+    background-size: 4px 4px;
+}
+
+.captcha-actions {
+    display: flex;
+    gap: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.icon-btn {
+    background: #f9f9f9;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-btn:hover {
+    background: #eaeaea;
+}
+
+.icon-btn:first-child {
+    border-right: 1px solid #ccc;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: var(--btn-disabled);
+    cursor: not-allowed;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.login-btn.active {
+    background-color: var(--secondary-blue);
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .header-left {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
