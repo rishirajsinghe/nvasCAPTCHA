@@ -1,0 +1,11 @@
+.env
+venv/
+__pycache__/
+*.pyc
+
+# ML data and models
+data/*.csv
+models/*.joblib
+models/*.json
+
+data/external/
