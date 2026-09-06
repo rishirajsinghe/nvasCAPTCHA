@@ -1,0 +1,139 @@
+{
+    "metrics": {
+        "accuracy": 0.462,
+        "precision": 0.43537414965986393,
+        "recall": 0.256,
+        "f1": 0.3224181360201511,
+        "roc_auc": 0.336192,
+        "fpr": 0.332,
+        "fnr": 0.744,
+        "human_mimic_bot_fnr": 1.0
+    },
+    "profiles": [
+        {
+            "profile": "FAST_HUMAN",
+            "count": 100,
+            "accuracy": 0.96,
+            "mean_risk": 0.21820000000000003,
+            "median_risk": 0.2,
+            "min_risk": 0.02,
+            "max_risk": 0.58,
+            "allow_pct": 90.0,
+            "captcha_pct": 10.0,
+            "block_pct": 0.0
+        },
+        {
+            "profile": "SLOW_HUMAN",
+            "count": 100,
+            "accuracy": 0.87,
+            "mean_risk": 0.31029999999999996,
+            "median_risk": 0.28,
+            "min_risk": 0.0,
+            "max_risk": 0.93,
+            "allow_pct": 64.0,
+            "captcha_pct": 26.0,
+            "block_pct": 10.0
+        },
+        {
+            "profile": "LOW_ACTIVITY_HUMAN",
+            "count": 100,
+            "accuracy": 0.08,
+            "mean_risk": 0.8318000000000001,
+            "median_risk": 0.875,
+            "min_risk": 0.31,
+            "max_risk": 0.95,
+            "allow_pct": 6.0,
+            "captcha_pct": 2.0,
+            "block_pct": 92.0
+        },
+        {
+            "profile": "ERRATIC_HUMAN",
+            "count": 100,
+            "accuracy": 0.7,
+            "mean_risk": 0.4331000000000001,
+            "median_risk": 0.435,
+            "min_risk": 0.03,
+            "max_risk": 0.79,
+            "allow_pct": 41.0,
+            "captcha_pct": 54.0,
+            "block_pct": 5.0
+        },
+        {
+            "profile": "POWER_USER_HUMAN",
+            "count": 100,
+            "accuracy": 0.73,
+            "mean_risk": 0.44010000000000005,
+            "median_risk": 0.435,
+            "min_risk": 0.1,
+            "max_risk": 0.77,
+            "allow_pct": 34.0,
+            "captcha_pct": 62.0,
+            "block_pct": 4.0
+        },
+        {
+            "profile": "HUMAN_MIMIC_BOT",
+            "count": 100,
+            "accuracy": 0.0,
+            "mean_risk": 0.048,
+            "median_risk": 0.0,
+            "min_risk": 0.0,
+            "max_risk": 0.27,
+            "allow_pct": 100.0,
+            "captcha_pct": 0.0,
+            "block_pct": 0.0
+        },
+        {
+            "profile": "SLOW_BOT",
+            "count": 100,
+            "accuracy": 0.01,
+            "mean_risk": 0.10289999999999999,
+            "median_risk": 0.07,
+            "min_risk": 0.07,
+            "max_risk": 0.9,
+            "allow_pct": 97.0,
+            "captcha_pct": 2.0,
+            "block_pct": 1.0
+        },
+        {
+            "profile": "ACTIVE_BOT",
+            "count": 100,
+            "accuracy": 0.0,
+            "mean_risk": 0.1844,
+            "median_risk": 0.22,
+            "min_risk": 0.05,
+            "max_risk": 0.32,
+            "allow_pct": 100.0,
+            "captcha_pct": 0.0,
+            "block_pct": 0.0
+        },
+        {
+            "profile": "ERRATIC_BOT",
+            "count": 100,
+            "accuracy": 1.0,
+            "mean_risk": 0.8692000000000002,
+            "median_risk": 0.88,
+            "min_risk": 0.59,
+            "max_risk": 1.0,
+            "allow_pct": 0.0,
+            "captcha_pct": 6.0,
+            "block_pct": 94.0
+        },
+        {
+            "profile": "ADVERSARIAL_MIXED_BOT",
+            "count": 100,
+            "accuracy": 0.27,
+            "mean_risk": 0.39430000000000015,
+            "median_risk": 0.375,
+            "min_risk": 0.03,
+            "max_risk": 0.83,
+            "allow_pct": 54.0,
+            "captcha_pct": 39.0,
+            "block_pct": 7.000000000000001
+        }
+    ],
+    "hashes": {
+        "before": "b57d0496f27adcb56d7833b724f67dfc7461f43cab85ce52c9ae03961a949e70",
+        "after": "b57d0496f27adcb56d7833b724f67dfc7461f43cab85ce52c9ae03961a949e70"
+    },
+    "api_mismatches": 0
+}

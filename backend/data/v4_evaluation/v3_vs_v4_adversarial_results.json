@@ -1,0 +1,16 @@
+{
+    "V3": {
+        "acc": 0.491,
+        "fpr": 0.222,
+        "fnr": 0.796,
+        "mimic_fnr": 1.0,
+        "low_act_block": 0.92
+    },
+    "V4": {
+        "acc": 0.648,
+        "fpr": 0.022,
+        "fnr": 0.682,
+        "mimic_fnr": 0.28,
+        "low_act_block": 0.0
+    }
+}
