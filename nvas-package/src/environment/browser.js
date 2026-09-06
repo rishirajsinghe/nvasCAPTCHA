@@ -1,3 +1,4 @@
+// src/environment/browser.js
 
 class BrowserEnvironment {
   collect() {
